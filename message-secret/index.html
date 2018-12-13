@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <h1>Message Secret</h1>
+      <input type="text" id="txt" value="">
+      <button  name="button" onclick="msg()">Message</button>
+    </form>
+    <script type="text/javascript">
+      function msg() {
+        var chaine = document.getElementById('txt').value;
+        maj = [];
+        var rep = chaine.replace(/[^A-Z]/g, "")
+        maj = rep.split('').join('');
+        document.write(maj);
+      //  alert(maj)
+ }
+    </script>
+  </body>
+</html>
